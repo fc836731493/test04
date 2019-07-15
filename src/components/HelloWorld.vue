@@ -3,7 +3,8 @@
     <div>
       <ul>
         <li v-for="news in newsData" >
-           <p>{{ news.screen_name }}</p>
+          <p>{{ news.text }}</p>
+          <img :src="news.image0" alt="">
         </li>
       </ul>
     </div>
